@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@radix-ui/react-label':
+    specifier: ^2.0.2
+    version: 2.0.2(@types/react-dom@18.2.20)(@types/react@18.2.63)(react-dom@18.2.0)(react@18.2.0)
   '@radix-ui/react-slot':
     specifier: ^1.0.2
     version: 1.0.2(@types/react@18.2.63)(react@18.2.0)
@@ -670,6 +673,48 @@ packages:
       react: 18.2.0
     dev: false
 
+  /@radix-ui/react-label@2.0.2(@types/react-dom@18.2.20)(@types/react@18.2.63)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-N5ehvlM7qoTLx7nWPodsPYPgMzA5WM8zZChQg8nyFJKnDO5WHdba1vv5/H6IO5LtJMfD2Q3wh1qHFGNtK0w3bQ==}
+    peerDependencies:
+      '@types/react': '*'
+      '@types/react-dom': '*'
+      react: ^16.8 || ^17.0 || ^18.0
+      react-dom: ^16.8 || ^17.0 || ^18.0
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      '@types/react-dom':
+        optional: true
+    dependencies:
+      '@babel/runtime': 7.24.0
+      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.2.20)(@types/react@18.2.63)(react-dom@18.2.0)(react@18.2.0)
+      '@types/react': 18.2.63
+      '@types/react-dom': 18.2.20
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
+  /@radix-ui/react-primitive@1.0.3(@types/react-dom@18.2.20)(@types/react@18.2.63)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-yi58uVyoAcK/Nq1inRY56ZSjKypBNKTa/1mcL8qdl6oJeEaDbOldlzrGn7P6Q3Id5d+SYNGc5AJgc4vGhjs5+g==}
+    peerDependencies:
+      '@types/react': '*'
+      '@types/react-dom': '*'
+      react: ^16.8 || ^17.0 || ^18.0
+      react-dom: ^16.8 || ^17.0 || ^18.0
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      '@types/react-dom':
+        optional: true
+    dependencies:
+      '@babel/runtime': 7.24.0
+      '@radix-ui/react-slot': 1.0.2(@types/react@18.2.63)(react@18.2.0)
+      '@types/react': 18.2.63
+      '@types/react-dom': 18.2.20
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
   /@radix-ui/react-slot@1.0.2(@types/react@18.2.63)(react@18.2.0):
     resolution: {integrity: sha512-YeTpuq4deV+6DusvVUW4ivBgnkHwECUu0BiN43L5UCDFgdhsRUWAghhTF5MbvNTPzmiFOx90asDSUjWuCNapwg==}
     peerDependencies:
@@ -878,7 +923,6 @@ packages:
     resolution: {integrity: sha512-HXN/biJY8nv20Cn9ZbCFq3liERd4CozVZmKbaiZ9KiKTrWqsP7eoGDO6OOGvJQwoVFuiXaiJ7nBBjiFFbRmQMQ==}
     dependencies:
       '@types/react': 18.2.63
-    dev: true
 
   /@types/react@18.2.63:
     resolution: {integrity: sha512-ppaqODhs15PYL2nGUOaOu2RSCCB4Difu4UFrP4I3NHLloXC/ESQzQMi9nvjfT1+rudd0d2L3fQPJxRSey+rGlQ==}
