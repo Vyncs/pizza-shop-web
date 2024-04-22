@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async'
 import { useForm } from 'react-hook-form'
+import { toast } from 'sonner'
 import { z } from 'zod'
 
 import { Button } from '@/components/ui/button'
@@ -16,13 +17,13 @@ export function SignIn() {
   const {
     register,
     handleSubmit,
-    formState: { isSubmitted },
+    formState: { isSubmitting },
   } = useForm<SignInForm>()
 
   async function handleSignIn(data: SignInForm) {
     console.log(data)
 
-    await new Promise((resolve) => setTimeout(resolve, 2000))
+    toast.success('Enviamos um link de autenticação para seu e-mail.')
   }
   return (
     <>
@@ -44,7 +45,7 @@ export function SignIn() {
               <Input id="email" type="email" {...register('email')} />
             </div>
 
-            <Button disabled={isSubmitted} className="w-full" type="submit">
+            <Button disabled={isSubmitting} className="w-full" type="submit">
               Acessar painel
             </Button>
           </form>
